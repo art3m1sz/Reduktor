@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 ## Copyright To Reduktor Software House
-Made by @art3m1sz
+Made by [@art3m1sz](https://www.instagram.com/no.more.yahallo/)
 
 
 ## Getting Started
