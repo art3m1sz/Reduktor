@@ -26,7 +26,7 @@ const Team: React.FC<TeamProps> = React.memo(({ img, name, bio, isActive }) => {
         <Text fontSize="xl" color={"white"} fontWeight="bold">
           {name}
         </Text>
-        <Text fontSize="xl" color={"white"} fontWeight="bold">
+        <Text fontSize="xl" color={"white"} fontWeight="semibold">
           {bio}
         </Text>
       </Flex>
