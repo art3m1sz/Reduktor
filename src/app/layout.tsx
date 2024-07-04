@@ -5,6 +5,12 @@ import { fonts } from "./fonts";
 import Nav from "./Nav";
 import { Providers } from "./providers";
 
+
+export const metadata = {
+    title: "Reduktor | Home"
+}
+
+
 export default function RootLayout({
     children,
 }: {

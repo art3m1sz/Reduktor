@@ -1,5 +1,5 @@
 // app/fonts.ts
-import { Inter, Montserrat } from 'next/font/google'
+import { Inter, Montserrat, Poppins, Roboto } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,6 +11,12 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 })
 
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], // Correct syntax for multiple weights
+});
+
 export const fonts = {
-  inter, montserrat
+  inter, montserrat, poppins
 }

@@ -1,12 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Poppins,Inter } from "next/font/google";
 import Banner from "./components/Banner";
 import Carousel from "./components/CarouselItem";
 import Feature from "./components/Feature";
 import CarouselList from "./components/CarouselList";
 import About from "./components/About";
+import Product from "./components/Product";
+import Footer from "./Footer";
+
+
 
 export default function Home() {
     return (
@@ -18,6 +22,9 @@ export default function Home() {
             gap={"148px"}
             pb={"16px"}>
             <Flex
+                backgroundPosition={"center"}
+                backgroundSize={"cover"}
+                backgroundRepeat={"no-repeat"}
                 backdropFilter="auto"
                 backdropBlur="24px"
                 position={"relative"}
@@ -25,7 +32,7 @@ export default function Home() {
                 justify={"center"}
                 w={"full"}
                 h={"100vh"}
-                backgroundImage="url('/banner.jpg')">
+                backgroundImage="url('/banner4.png')">
                 <Banner></Banner>
             </Flex>
             <Flex>
@@ -34,8 +41,14 @@ export default function Home() {
             <Flex>
                 <Feature></Feature>
             </Flex>
-            <Flex position={"relative"} backgroundImage="url('/banner.jpg')">
+            <Flex position={"relative"} backgroundImage="url('/banner4')"> 
                 <CarouselList></CarouselList>
+            </Flex>
+            <Flex>
+                <Product></Product>
+            </Flex>
+            <Flex>
+                <Footer></Footer>
             </Flex>
         </Flex>
     );

@@ -3,6 +3,7 @@ import { Flex, Box, Text, Button } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 
+
 interface CarouselItemProps {
   img: string;
   name: string;

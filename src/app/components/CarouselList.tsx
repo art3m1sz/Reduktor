@@ -47,8 +47,11 @@ const projects = [
 
 const CarouselList: React.FC = () => {
   return (
-      <Flex maxW="6xl" gap="6" px="5" mx="auto" alignItems="center" position="relative">
-        <Box w={{ lg: "12/13", base: "100%" }} h="full">
+      <Flex direction={"column"} maxW="6xl" gap="6" px="5" mx="auto" alignItems="center" position="relative">
+        <Flex>
+          <Text color={"white"} fontWeight={"bold"} fontSize={"40px"} borderBottom={"1px solid red"}>Our Project</Text>
+        </Flex>
+        <Box pt={"10px"} w={{ lg: "12/13", base: "100%" }} h="full">
           <Swiper
             slidesPerView={1.2}
             spaceBetween={20}
