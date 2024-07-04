@@ -1,6 +1,6 @@
 "use client"
-import React from "react";
-import { Flex, Box, Text } from "@chakra-ui/react";
+import React, { CSSProperties } from "react";
+import { Flex, Box, Text, color } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -58,7 +58,10 @@ const CarouselList: React.FC = () => {
             breakpoints={{ 768: { slidesPerView: 2 } }}
             loop={true}
             autoplay={{ delay: 3000 }}
-            pagination={{ clickable: true }}
+            pagination={{ clickable: true}}
+            // style={{
+            //   "--swiper-pagination-color": "#fff",
+            // } as CSSProperties}
             modules={[Pagination]}
           >
             {projects.map((project, i) => (

@@ -1,4 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
+import { Poppins } from "next/font/google";
 
 export default function About() {
     return (

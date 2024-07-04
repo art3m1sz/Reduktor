@@ -17,7 +17,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={fonts.inter.variable}>
+        <html lang="en" className={fonts.poppins.variable}>
             <body>
                 <Providers>
                     <Nav name=""></Nav>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { Montserrat, Poppins, Inter } from "next/font/google";
+import { Montserrat, Poppins, Inter, Arsenal, Pompiere, Praise, Press_Start_2P, Merriweather, Kanit } from "next/font/google";
 import Banner from "./components/Banner";
 import Carousel from "./components/CarouselItem";
 import Feature from "./components/Feature";
@@ -20,7 +20,8 @@ export default function Home() {
             maxW={"100%"}
             w={{ base: "100vw", lg: "100vw" }}
             gap={"148px"}
-            pb={"16px"}>
+            pb={"16px"}
+            fontFamily={"Poppins"}>
             <Flex
                 backgroundPosition={"center"}
                 backgroundSize={"cover"}

@@ -21,8 +21,9 @@ export default function Contact() {
                 </Text>
             </Flex>
             <Flex gap={"48px"} align={"center"} >
-                <Flex direction={"column"} gap={"8px"} align={"center"} w={"180px"}>
+                <Flex direction={"column"} gap={"8px"} align={"center"} w={""}>
                     <IconButton
+                        border={"2px solid red"}
                         w={"84px"}
                         h={"84px"}
                         fontSize={"42px"}
@@ -39,6 +40,7 @@ export default function Contact() {
                 </Flex>
                 <Flex direction={"column"} gap={"8px"} align={"center"} w={"180px"}>
                     <IconButton
+                        border={"2px solid red"}
                         w={"84px"}
                         h={"84px"}
                         fontSize={"42px"}
@@ -55,6 +57,7 @@ export default function Contact() {
                 </Flex>
                 <Flex direction={"column"} gap={"8px"} align={"center"} w={"180px"}>
                     <IconButton
+                        border={"2px solid red"}
                         w={"84px"}
                         h={"84px"}
                         fontSize={"42px"}
@@ -71,6 +74,7 @@ export default function Contact() {
                 </Flex>
                 <Flex direction={"column"} gap={"8px"} align={"center"} w={"180px"}>
                     <IconButton
+                        border={"2px solid red"}
                         w={"84px"}
                         h={"84px"}
                         fontSize={"42px"}
@@ -79,7 +83,7 @@ export default function Contact() {
                         <CiLinkedin></CiLinkedin>
                     </IconButton>
                     <Text color={"red"} fontWeight={"bold"} fontSize={"20px"}>
-                        Linkedin
+                        LinkedIn
                     </Text>
                     <Text color={"white"} fontSize={"16px"} fontWeight={"semibold"}>
                         reduktor@example.com
