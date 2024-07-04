@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { Montserrat, Poppins,Inter } from "next/font/google";
+import { Montserrat, Poppins, Inter } from "next/font/google";
 import Banner from "./components/Banner";
 import Carousel from "./components/CarouselItem";
 import Feature from "./components/Feature";
@@ -10,8 +10,7 @@ import About from "./components/About";
 import Product from "./components/Product";
 import Footer from "./Footer";
 import TeamList from "./components/TeamList";
-
-
+import Contact from "./components/Contact";
 
 export default function Home() {
     return (
@@ -42,16 +41,19 @@ export default function Home() {
             <Flex>
                 <Feature></Feature>
             </Flex>
-            <Flex position={"relative"} backgroundImage="url('/banner4')"> 
+            <Flex position={"relative"} backgroundImage="url('/banner4')">
                 <CarouselList></CarouselList>
             </Flex>
             <Flex>
                 <Product></Product>
             </Flex>
-            <Flex>
+            <Flex pb={"62px"}>
                 <TeamList></TeamList>
             </Flex>
-            <Flex pb={"62px"}>
+            <Flex pb={"124px"}>
+                <Contact></Contact>
+            </Flex>
+            <Flex>
                 <Footer></Footer>
             </Flex>
         </Flex>

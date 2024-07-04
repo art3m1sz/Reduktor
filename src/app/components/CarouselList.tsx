@@ -47,7 +47,7 @@ const projects = [
 
 const CarouselList: React.FC = () => {
   return (
-      <Flex direction={"column"} maxW="6xl" gap="6" px="5" mx="auto" alignItems="center" position="relative">
+      <Flex direction={"column"} maxW="6xl" gap="24px" px="5" mx="auto" alignItems="center" position="relative">
         <Flex>
           <Text color={"white"} fontWeight={"bold"} fontSize={"40px"} borderBottom={"1px solid red"}>Our Project</Text>
         </Flex>
