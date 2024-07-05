@@ -10,35 +10,35 @@ import CarouselItem from "./CarouselItem";
 
 const projects = [
     {
-      img: "/deepmind.jpg",
+      img: "/Reduktor-logo-dark.png",
       name: "Netflix Clone",
       github_link: "https://github.com/aryyan0701/Netflix_Clone",
     },
     {
-      img: "/project1.jpeg",
+      img: "/Reduktor-logo-dark.png",
       name: "Type Verse (Check your typing speed)",
       github_link: "https://github.com/aryyan0701/type_verse",
       live_link: "https://aryyan0701.github.io/type_verse/",
     },
     {
-      img: "/project2.jpeg",
+      img: "/Reduktor-logo-dark.png",
       name: "Currency converter",
       github_link: "https://github.com/aryyan0701/Currency_converter",
     },
     {
-      img: "/singer.jpg",
+      img: "/Reduktor-logo-dark.png",
       name: "Quizzify",
       github_link: "https://github.com/aryyan0701/Quizzify",
       live_link: "https://quizzad.netlify.app/",
     },
     {
-      img: "/sunrise.jpg",
+      img: "/Reduktor-logo-dark.png",
       name: "Bloggify",
       github_link: "https://github.com/aryyan0701/Bloggify",
       live_link: "https://aryyan0701.github.io/Bloggify/",
     },
     {
-      img: "/sunrise.jpg",
+      img: "/Reduktor-logo-dark.png",
       name: "Sandbox Clone",
       github_link: "https://github.com/aryyan0701/sandbox_clone",
       live_link: "https://aryyan0701.github.io/sandbox_clone/",
@@ -59,9 +59,10 @@ const CarouselList: React.FC = () => {
             loop={true}
             autoplay={{ delay: 3000 }}
             pagination={{ clickable: true}}
-            // style={{
-            //   "--swiper-pagination-color": "#fff",
-            // } as CSSProperties}
+            style={{
+              "--swiper-pagination-color": "red",
+              "--swiper-pagination-bullet-inactive-color": "red",
+            } as CSSProperties}
             modules={[Pagination]}
           >
             {projects.map((project, i) => (

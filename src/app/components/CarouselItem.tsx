@@ -13,7 +13,7 @@ interface CarouselItemProps {
 
 const CarouselItem: React.FC<CarouselItemProps> = React.memo(({ img, name, github_link, live_link }) => {
   return (
-    <Flex direction="column" p="4" backdropBlur={"20%"} borderRadius="xl">
+    <Flex direction="column" p="4" backdropBlur={"20%"} borderRadius="xl" pb={"48px"}>
       <Box w="100%" h="356px" borderRadius="lg" overflow="hidden" position="relative">
         <Image src={img} alt={name} layout="fill"
     objectFit="cover" />
@@ -32,5 +32,6 @@ const CarouselItem: React.FC<CarouselItemProps> = React.memo(({ img, name, githu
     </Flex>
   );
 });
+CarouselItem.displayName = "CarouselItem";
 
 export default CarouselItem;

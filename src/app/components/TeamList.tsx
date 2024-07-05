@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { CSSProperties, useState } from "react";
 import { Flex, Box, Text, Avatar } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -9,33 +9,40 @@ import Team from "./Team";
 
 const projects = [
   {
-    img: "/masapri.jpg",
-    name: "Mas Apri",
+    img: "/aby.jpeg",
+    name: "Aby",
     bio: "anjay",
   },
   {
-    img: "/ultraman.jpg",
-    name: "Supartana",
+    img: "/wira.jpeg",
+    name: "Wira",
     bio: "anjay",
   },
   {
-    img: "/willy.jpg",
+    img: "/willy.jpeg",
     name: "Willy",
     bio: "anjay",
   },
   {
-    img: "/masapri.jpg",
-    name: "Mas Apri",
+    img: "/parta.jpeg",
+    name: "Parta",
+    bio: "anjay",
+  },
+
+  {
+    img: "/envy.jpeg",
+    name: "Envy",
+    bio: "anjay",
+  },
+
+  {
+    img: "/Reduktor-logo-dark.png",
+    name: "Spagud",
     bio: "anjay",
   },
   {
-    img: "/sunrise.jpg",
-    name: "Bloggify",
-    bio: "anjay",
-  },
-  {
-    img: "/sunrise.jpg",
-    name: "Sandbox Clone",
+    img: "/Reduktor-logo-dark.png",
+    name: "Tony",
     bio: "anjay",
   },
 ];
@@ -64,9 +71,14 @@ const TeamList: React.FC = () => {
           centeredSlides={true}
           autoplay={{ delay: 30000 }}
           pagination={{ clickable: true }}
+          style={{
+            "--swiper-pagination-color": "red",
+            "--swiper-pagination-bullet-inactive-color": "red",
+          } as CSSProperties}
           modules={[Pagination, Autoplay]}
           onSlideChange={handleSlideChange}
           initialSlide={1}
+          
         >
           {projects.map((project, i) => (
             <SwiperSlide key={i}>

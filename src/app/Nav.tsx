@@ -22,7 +22,6 @@ export default function Nav({ name }: { name: string }) {
       width={"100vw"}
       shadow={"0px 2px 20px rgba(41,17,0,0.1)"}
       gap={"4px"}
-      fontFamily={"Poppins"}
       fontWeight={"bold"}
     >
       <Flex align={"center"} mr={"auto"} gap={"8px"}>

@@ -31,25 +31,7 @@ const Footer = () => {
                     All rights reserved.
                 </Text>
             </Box>
-            <Box flex="1" color={"gray"} textAlign="center">
-                <Flex justify="center">
-                    <Link
-                        href="#"
-                        mx="2"
-                        _hover={{ color: "red" }}
-                        fontSize="sm">
-                        Privacy Policy
-                    </Link>
-                    <Text mx="2">•</Text>
-                    <Link
-                        href="#"
-                        mx="2"
-                        _hover={{ color: "red" }}
-                        fontSize="sm">
-                        Terms of Service
-                    </Link>
-                </Flex>
-            </Box>
+
         </Flex>
     );
 };

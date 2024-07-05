@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import styles from "./page.module.css";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { Montserrat, Poppins, Inter, Arsenal, Pompiere, Praise, Press_Start_2P, Merriweather, Kanit } from "next/font/google";
@@ -20,8 +20,7 @@ export default function Home() {
             maxW={"100%"}
             w={{ base: "100vw", lg: "100vw" }}
             gap={"148px"}
-            pb={"16px"}
-            fontFamily={"Poppins"}>
+            pb={"16px"}>
             <Flex
                 backgroundPosition={"center"}
                 backgroundSize={"cover"}
