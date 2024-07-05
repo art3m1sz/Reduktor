@@ -27,7 +27,7 @@ export default function Nav({ name }: { name: string }) {
       <Flex align={"center"} mr={"auto"} gap={"8px"}>
         <Flex gap={"8px"} p={"0px"} mr={"auto"} w={"28px"} h={"28px"}>
           <Image
-            src="aby.jpeg"
+            src="/Reduktor-logo-dark.png"
             alt="nav"
             sizes="100vw"
             style={{ width: "100%" }}
